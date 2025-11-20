@@ -1,0 +1,629 @@
+body {
+  margin: 0 auto;
+  background: #030718;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  nav {
+    position: relative;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      align-items: center;
+      padding-left: -16px;
+    }
+    .nav_menu {
+      .nav_menu_list {
+        position: absolute;
+        left: 0;
+        z-index: 3;
+        display: none;
+        background: rgba(106, 84, 255, 1);
+        width: 100%;
+        .nav_menu_listClose {
+          text-align: right;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          padding-left: 16px;
+          padding-bottom: 113px;
+          margin-top: 32px;
+
+          li {
+            list-style-type: none;
+
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 24px;
+              line-height: 30px;
+              opacity: 60%;
+            }
+          }
+        }
+        .nav_menu_register {
+          width: 100%;
+          padding-left: 16px;
+          justify-content: space-between;
+          padding-bottom: 16px;
+          button {
+            height: 52px;
+            width: 163.5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 3px;
+            margin-right: 5px;
+          }
+          .but_reg {
+            background: rgba(87, 225, 255, 1);
+            border: none;
+          }
+          .butEnter {
+            border: 2px solid rgba(87, 225, 255, 1);
+            color: rgba(87, 225, 255, 1);
+            background: rgba(106, 84, 255, 1);
+          }
+        }
+      }
+      .nav_menu_mobi {
+        padding-top: 17px;
+      }
+    }
+  }
+  .main {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 37px;
+    overflow: hidden;
+    .main_card_wrapper {
+      display: flex;
+      position: relative;
+      .main_card {
+        display: flex;
+        .card {
+          padding: 10px;
+          border-radius: 4px;
+          padding-right: 70px;
+          h3,
+          .profit {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0;
+          }
+          .subtitle {
+            margin-bottom: 20px;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 400;
+            opacity: 60%;
+          }
+        }
+        .card_outline {
+          border: 1px dashed #6a54ff;
+          margin-right: 2px;
+        }
+        .card_solid {
+          border: none;
+          background: #6a54ff;
+          margin-left: 2px;
+        }
+        .card_line {
+          height: 21px;
+        }
+        .lineSolid {
+          margin-top: auto;
+        }
+      }
+      .main_card_solid {
+        position: absolute;
+        left: 114px;
+        top: 26px;
+      }
+    }
+    .main_info {
+      padding-top: 60px;
+      .main_info_tittle {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 44px;
+        text-transform: uppercase;
+        letter-spacing: -1.4px;
+        padding-bottom: 12px;
+      }
+      .main_info_data {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400px;
+        opacity: 80%;
+        padding-bottom: 24px;
+      }
+      .main_info_mail {
+        input {
+          height: 50px;
+          border-radius: 4px;
+          border: none;
+          text-transform: uppercase;
+        }
+        input[type="text"] {
+          background: rgba(32, 26, 79, 1);
+          width: 65%;
+        }
+        input[type="text"]::placeholder {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          padding-left: 16px;
+        }
+        input[type="submit"] {
+          background: rgba(87, 225, 255, 1);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 700;
+          color: rgba(3, 7, 24, 1);
+          width: 30%;
+        }
+      }
+      .main_info_note {
+        padding-top: 12px;
+        font-size: 14px;
+
+        font-weight: 400;
+        opacity: 30%;
+        padding-bottom: 37px;
+      }
+    }
+  }
+  .digit {
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    padding-left: 16px;
+    padding-right: 26px;
+    padding-bottom: 48px;
+    padding-top: 24px;
+
+    .digit_tittle {
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: black;
+      margin: 0;
+    }
+    .digit_subtittle {
+      font-size: 14px;
+      line-height: 20px;
+      opacity: 50%;
+      padding-bottom: 40px;
+      color: rgba(0, 0, 0, 1);
+    }
+    .digit_info {
+      .info_line_first {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+      }
+      .digit_info_line {
+        h4 {
+          font-size: 14px;
+          line-height: 20px;
+          opacity: 80%;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 1);
+          font-weight: 400;
+          margin: 0;
+        }
+        div {
+          font-size: 35px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: rgba(106, 84, 255, 1);
+        }
+      }
+    }
+  }
+  .deal {
+    padding-top: 48px;
+    padding-left: 16px;
+    padding-bottom: 53px;
+    .deal_tittle {
+      font-size: 28px;
+      line-height: 36px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .deal_indicate {
+      color: rgba(53, 255, 158, 1);
+      font-size: 14px;
+      opacity: 90%;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 4px;
+      }
+    }
+    .deal_cards_list {
+      margin-top: 24px;
+
+      display: flex;
+      overflow: scroll;
+      padding-bottom: 16px;
+
+      .deal_card {
+        margin-right: 8px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-image: url("/img/profit_bg.png");
+        background-size: cover;
+        padding-left: 16px;
+        width: 299px;
+        .card_first_wrap {
+          display: flex;
+          justify-content: space-between;
+          .card_first_wrap_data {
+            .deal_card_tittle {
+              font-size: 20px;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+            .deal_card_sub_tittle {
+              font-size: 14px;
+              font-weight: 500;
+              opacity: 40%;
+            }
+            .deal_card_profit {
+              padding-top: 40px;
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 500;
+              padding-bottom: 2px;
+            }
+            .deal_card_profit_perc {
+              font-size: 28px;
+              color: rgba(53, 255, 158, 1);
+              text-transform: uppercase;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+        .deal_card_goal {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          padding-right: 16px;
+          margin-top: -15px;
+          .deal_card_goal_name {
+            opacity: 70%;
+          }
+          .deal_card_date {
+            opacity: 40%;
+          }
+        }
+      }
+    }
+    .deal_cards_list::-webkit-scrollbar {
+      height: 6px;
+      width: 0;
+    }
+    .deal_cards_list::-webkit-scrollbar-track {
+      background: rgba(67, 79, 112, 1);
+      border-radius: 56px;
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+    .deal_cards_list::-webkit-scrollbar-thumb {
+      background: rgba(96, 115, 161, 1);
+      border-radius: 56px;
+      width: 61.66px;
+    }
+  }
+  .about_company {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 75%,
+      #030718 25%
+    );
+    .about_company_tittle {
+      font-size: 28px;
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: black;
+      text-transform: uppercase;
+    }
+    .about_company_data {
+      font-weight: 400;
+      font-size: 16px;
+      color: black;
+
+      line-height: 20px;
+      div {
+        padding-bottom: 40px;
+        opacity: 80%;
+      }
+    }
+    .about_company_tryIt {
+      padding: 15px;
+      background: rgba(106, 84, 255, 1);
+      border-radius: 4px;
+      .about_company_tryIt_title {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .about_company_tryIt_mail {
+        input {
+          height: 50px;
+          border-radius: 3px;
+          border: none;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+          width: 100%;
+        }
+        input[type="text"] {
+          background: rgba(32, 26, 79, 1);
+          opacity: 34%;
+        }
+        input[type="text"]::placeholder {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          padding-left: 16px;
+        }
+        input[type="submit"] {
+          background: rgba(87, 225, 255, 1);
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 500;
+          color: rgba(3, 7, 24, 1);
+        }
+      }
+    }
+  }
+  .tariffs {
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 44px;
+    .tariffs_tittle {
+      font-size: 28px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding-bottom: 24px;
+    }
+    .tariffs_switch {
+      display: flex;
+      margin-bottom: 4px;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 4px;
+      background: rgb(43, 25, 155);
+      border-radius: 4px;
+      .switch1 {
+        background: rgba(87, 225, 255, 1);
+        font-weight: 700;
+        padding: 14px 60px;
+        border-radius: 4px;
+        color: black;
+      }
+      .switch2 {
+        color: rgba(87, 225, 255, 1);
+        padding: 14px 35px;
+      }
+    }
+    .tariffs_list {
+      .tarrifs_info {
+        margin-top: 20px;
+        padding: 16px;
+        font-size: 16px;
+        .tarif_item_tittle {
+          font-size: 20px;
+          font-weight: 500;
+          padding-bottom: 24px;
+        }
+        .tarif_item_list {
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style-type: none;
+              padding-bottom: 8px;
+              padding-top: 8px;
+              border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+              font-size: 16px;
+              img {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .tarif_item_price {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 26px;
+          padding-bottom: 24px;
+          .tarif_item_price_wrapper {
+            display: flex;
+            .price {
+              font-size: 35px;
+              font-weight: 500;
+            }
+            .priceChange {
+              font-size: 18px;
+              color: rgba(53, 255, 158, 1);
+            }
+          }
+          .tarif_item_price_select {
+            select {
+              padding: 8px;
+              height: 36px;
+              font-size: 16px;
+              color: white;
+              border-radius: 4px;
+              border: none;
+              line-height: 20px;
+            }
+          }
+        }
+        .tarif_item_but {
+          button {
+            width: 100%;
+            background: rgba(87, 225, 255, 1);
+            border: none;
+            border-radius: 3px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            span {
+              font-size: 12px;
+              opacity: 56%;
+              text-transform: lowercase;
+            }
+          }
+        }
+      }
+      .tarif_item1 {
+        border: 1px solid rgba(106, 84, 255, 1);
+        border-radius: 8px;
+        .tarif_item_price_select {
+          select {
+            background-color: rgb(61, 61, 61);
+          }
+        }
+      }
+      .tarif_item2 {
+        border: none;
+        border-radius: 8px;
+        background: rgba(106, 84, 255, 1);
+        .tarif_item_price_select {
+          select {
+            background-color: rgba(181, 158, 245, 0.178);
+          }
+        }
+      }
+    }
+  }
+}
+
+.digit_wrapper::before,
+.about_company_wrapper::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 70%;
+  height: 60px;
+
+  background: white;
+
+  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+}
+
+@media screen and (min-width: 800px){
+  body {
+    min-width: 800px;
+  }
+  .tariffs {
+    .tariffs_switch {
+      width: fit-content;
+    }
+    .tariffs_list {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .tarrifs_info {
+        margin-right: 20px;
+      }
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 160px !important;
+    padding-left: 80px !important;
+    padding-bottom: 134px !important;
+    .main_card_wrapper {
+      width: 50%;
+      padding-left: 128px;
+      .card_outline {
+        height: 90px;
+      }
+      .main_card_solid {
+        left: 242px !important;
+      }
+    }
+    .main_info {
+      width: 50%;
+      padding: 0 !important;
+    }
+  }
+
+  .digit {
+    background: rgba(255, 255, 255, 1);
+    padding-left: 80px !important;
+    padding-bottom: 25px !important;
+    padding-top: 56px !important;
+    .digit_wrapper {
+      display: flex;
+      justify-content: space-between;
+      .digit_info {
+        display: flex;
+        .digit_info_card {
+          text-align: center;
+        }
+        h4 {
+          text-transform: lowercase !important;
+        }
+      }
+      .digit_date {
+        margin-right: 140px;
+      }
+
+    
+    }
+  }
+  .about_company {
+    background: white !important;
+    .about_company_data_wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 92px;
+      .about_company_data {
+        width: 50%;
+      }
+      .about_company_tryIt {
+        .about_company_tryIt_mail {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+    body{
+        max-width: 1440px;
+        nav{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+}
+
