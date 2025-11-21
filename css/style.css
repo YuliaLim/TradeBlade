@@ -206,7 +206,14 @@ body .digit .digit_info .info_line_first {
   justify-content: space-between;
   padding-bottom: 32px;
 }
+body .digit .digit_info .info_line_first h4 {
+  padding-right: 20px !important;
+}
+body .digit .digit_info .info_line_first .digit_info_card:last-child {
+  margin-left: 60px;
+}
 body .digit .digit_info .digit_info_line h4 {
+  padding-right: 200px;
   font-size: 14px;
   line-height: 20px;
   opacity: 80%;
@@ -410,6 +417,8 @@ body .tariffs .tariffs_list .tarrifs_info {
   margin-top: 20px;
   padding: 16px;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
 body .tariffs .tariffs_list .tarrifs_info .tarif_item_tittle {
   font-size: 20px;
@@ -430,24 +439,27 @@ body .tariffs .tariffs_list .tarrifs_info .tarif_item_list ul li {
 body .tariffs .tariffs_list .tarrifs_info .tarif_item_list ul li img {
   margin-right: 10px;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_price {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom {
+  margin-top: auto;
+}
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_price {
   display: flex;
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 24px;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_price .tarif_item_price_wrapper {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_price .tarif_item_price_wrapper {
   display: flex;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_price .tarif_item_price_wrapper .price {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_price .tarif_item_price_wrapper .price {
   font-size: 35px;
   font-weight: 500;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_price .tarif_item_price_wrapper .priceChange {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_price .tarif_item_price_wrapper .priceChange {
   font-size: 18px;
   color: rgb(53, 255, 158);
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_price .tarif_item_price_select select {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_price .tarif_item_price_select select {
   padding: 8px;
   height: 36px;
   font-size: 16px;
@@ -456,7 +468,7 @@ body .tariffs .tariffs_list .tarrifs_info .tarif_item_price .tarif_item_price_se
   border: none;
   line-height: 20px;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_but button {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_but button {
   width: 100%;
   background: rgb(87, 225, 255);
   border: none;
@@ -467,7 +479,7 @@ body .tariffs .tariffs_list .tarrifs_info .tarif_item_but button {
   font-weight: 500;
   text-transform: uppercase;
 }
-body .tariffs .tariffs_list .tarrifs_info .tarif_item_but button span {
+body .tariffs .tariffs_list .tarrifs_info .tarif_bottom .tarif_item_but button span {
   font-size: 12px;
   opacity: 56%;
   text-transform: lowercase;
@@ -527,7 +539,7 @@ body .tariffs .tariffs_list .tarif_item2 .tarif_item_price_select select {
     padding-left: 128px;
   }
   .main .main_card_wrapper .card_outline {
-    height: 90px;
+    height: fit-content;
   }
   .main .main_card_wrapper .main_card_solid {
     left: 242px !important;
@@ -550,13 +562,14 @@ body .tariffs .tariffs_list .tarif_item2 .tarif_item_price_select select {
     display: flex;
   }
   .digit .digit_wrapper .digit_info .digit_info_card {
-    text-align: center;
+    text-align: left;
   }
   .digit .digit_wrapper .digit_info h4 {
     text-transform: lowercase !important;
+    padding-right: 0;
   }
   .digit .digit_wrapper .digit_date {
-    margin-right: 140px;
+    margin-right: 80px;
   }
   .about_company {
     background: white !important;
@@ -580,6 +593,172 @@ body .tariffs .tariffs_list .tarif_item2 .tarif_item_price_select select {
   body nav {
     padding-left: 80px;
     padding-right: 80px;
+    margin-top: 13px;
+  }
+  body nav .nav_menu_mobi {
+    display: none;
+  }
+  body nav .nav_menu .nav_menu_list {
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    background: none;
+    z-index: 1;
+    align-items: center;
+  }
+  body nav .nav_menu .nav_menu_list .nav_menu_listClose {
+    display: none;
+  }
+  body nav .nav_menu .nav_menu_list ul {
+    display: flex;
+    padding: 0;
+    white-space: nowrap;
+    margin-right: 82px;
+    margin-top: 0;
+  }
+  body nav .nav_menu .nav_menu_list ul li {
+    margin-bottom: 0;
+  }
+  body nav .nav_menu .nav_menu_list ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px;
+  }
+  body nav .nav_menu .nav_menu_list .nav_menu_register {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  body nav .nav_menu .nav_menu_list .nav_menu_register button {
+    font-size: 14px;
+    line-height: 20px;
+    width: fit-content;
+    height: 42px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  body nav .nav_menu .nav_menu_list .nav_menu_register .butEnter {
+    background: #0b2c5e;
+    margin-right: 12px;
+  }
+  body .main .main_info .main_info_tittle {
+    font-size: 60px;
+    line-height: 78px;
+  }
+  body .main .main_info .main_info_data {
+    color: rgba(231, 247, 248, 0.8);
+    font-weight: normal;
+    padding-right: 65px;
+  }
+  body .main .main_info .main_info_mail input[type=submit] {
+    font-size: 16px;
+    line-height: 20px;
+    width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  body .main .main_card_wrapper .main_card .card {
+    padding-right: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  body .main .main_card_wrapper .main_card .card .subtitle {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  body .main .main_card_wrapper .main_card .card h3 {
+    font-size: 28px;
+  }
+  body .digit .digit_wrapper {
+    justify-content: flex-start;
+  }
+  body .digit .digit_wrapper .digit_tittle {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  body .digit .digit_wrapper .digit_info .digit_info_line .digit_info_card {
+    text-align: left;
+  }
+  body .digit .digit_wrapper .digit_info .digit_info_line .digit_info_card div {
+    font-size: 60px;
+  }
+  body .digit .digit_wrapper .digit_date {
+    margin-right: 140px;
+  }
+  .deal {
+    padding-left: 80px !important;
+    padding-top: 96px !important;
+    padding-bottom: 178px !important;
+  }
+  .deal .deal_tittle {
+    font-size: 44px !important;
+    padding-bottom: 10px;
+  }
+  .deal .deal_indicate {
+    padding-bottom: 48px;
+  }
+  .deal .deal_cards_list .deal_card {
+    margin-right: 20px !important;
+  }
+  .about_company {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+  }
+  .about_company .about_company_wrapper .about_company_tittle {
+    font-size: 44px !important;
+    padding-bottom: 40px;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap {
+    padding-bottom: 0;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_data {
+    padding-right: 100px;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_data div {
+    padding-bottom: 20px;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_tryIt {
+    margin-top: -40px;
+    margin-left: 180px;
+    width: 630px;
+    padding: 40px 60px !important;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_tryIt .about_company_tryIt_title {
+    font-size: 28px;
+    padding: 30px;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_tryIt input[type=submit] {
+    width: 165px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .about_company .about_company_wrapper .about_company_data_wrap .about_company_tryIt input[type=text] {
+    width: 333px;
+  }
+  .tariffs {
+    padding: 96px 297px !important;
+  }
+  .tariffs .tariffs_tittle {
+    font-size: 44px !important;
+    padding-bottom: 40px !important;
+  }
+  .tariffs .tariffs_switch {
+    margin-bottom: 44px !important;
+    font-size: 24px !important;
+  }
+  .tariffs .tariffs_list .tarrifs_info {
+    padding: 24px !important;
+  }
+  .tariffs .tariffs_list .tarrifs_info .tarif_item_price {
+    bottom: 0;
+  }
+  .digit_wrapper::before,
+  .about_company_wrapper::before {
+    width: 45%;
   }
 }
 

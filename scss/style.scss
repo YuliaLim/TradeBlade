@@ -212,9 +212,16 @@ body {
         display: flex;
         justify-content: space-between;
         padding-bottom: 32px;
+        h4{
+            padding-right: 20px!important;
+        }
+        .digit_info_card:last-child{
+            margin-left: 60px;
+        }
       }
       .digit_info_line {
         h4 {
+          padding-right: 200px;
           font-size: 14px;
           line-height: 20px;
           opacity: 80%;
@@ -222,6 +229,7 @@ body {
           color: rgba(0, 0, 0, 1);
           font-weight: 400;
           margin: 0;
+          
         }
         div {
           font-size: 35px;
@@ -432,6 +440,8 @@ body {
         margin-top: 20px;
         padding: 16px;
         font-size: 16px;
+        display: flex;
+            flex-direction: column;
         .tarif_item_tittle {
           font-size: 20px;
           font-weight: 500;
@@ -453,7 +463,9 @@ body {
             }
           }
         }
-        .tarif_item_price {
+        .tarif_bottom{
+            margin-top: auto;
+             .tarif_item_price {
           display: flex;
           justify-content: space-between;
           padding-top: 26px;
@@ -499,6 +511,9 @@ body {
             }
           }
         }
+        }
+       
+
       }
       .tarif_item1 {
         border: 1px solid rgba(106, 84, 255, 1);
@@ -537,7 +552,7 @@ body {
   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
   body {
     min-width: 800px;
   }
@@ -564,7 +579,7 @@ body {
       width: 50%;
       padding-left: 128px;
       .card_outline {
-        height: 90px;
+        height: fit-content;
       }
       .main_card_solid {
         left: 242px !important;
@@ -587,17 +602,16 @@ body {
       .digit_info {
         display: flex;
         .digit_info_card {
-          text-align: center;
+          text-align: left;
         }
         h4 {
           text-transform: lowercase !important;
+          padding-right: 0;
         }
       }
       .digit_date {
-        margin-right: 140px;
+        margin-right: 80px;
       }
-
-    
     }
   }
   .about_company {
@@ -618,12 +632,210 @@ body {
   }
 }
 @media screen and (min-width: 1440px) {
-    body{
-        max-width: 1440px;
-        nav{
-            padding-left: 80px;
-            padding-right: 80px;
+  body {
+    max-width: 1440px;
+    nav {
+      padding-left: 80px;
+      padding-right: 80px;
+      margin-top: 13px;
+      .nav_menu_mobi {
+        display: none;
+      }
+      .nav_menu {
+        .nav_menu_list {
+          justify-content: space-between;
+          display: flex;
+          position: relative;
+          background: none;
+          z-index: 1;
+          align-items: center;
+          .nav_menu_listClose {
+            display: none;
+          }
+          ul {
+            display: flex;
+            padding: 0;
+            white-space: nowrap;
+            margin-right: 82px;
+            margin-top: 0;
+            // gap:32px;
+            li {
+              margin-bottom: 0;
+              a {
+                font-size: 14px;
+                display: block;
+                padding: 5px 10px;
+              }
+            }
+          }
+          .nav_menu_register {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-bottom: 0;
+            button {
+              font-size: 14px;
+              line-height: 20px;
+              width: fit-content;
+              height: 42px;
+              padding-right: 24px;
+              padding-left: 24px;
+            }
+            .butEnter {
+              background: #0b2c5e;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      .main_info {
+        .main_info_tittle {
+          font-size: 60px;
+          line-height: 78px;
+        }
+        .main_info_data {
+          color: rgba(231, 247, 248, 0.8);
+          font-weight: normal;
+          padding-right: 65px;
+        }
+        .main_info_mail {
+          input[type="submit"] {
+            font-size: 16px;
+            line-height: 20px;
+            width: fit-content;
+            padding-left: 24px;
+            padding-right: 24px;
+          }
+        }
+      }
+      .main_card_wrapper {
+        .main_card {
+          .card {
+            padding-right: 120px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            .subtitle {
+              font-size: 16px;
+              padding-bottom: 30px;
+            }
+            h3 {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+    .digit {
+      .digit_wrapper {
+        justify-content: flex-start;
+        .digit_tittle {
+          font-size: 44px;
+          line-height: 56px;
+        }
+        .digit_info {
+          .digit_info_line {
+            .digit_info_card {
+              text-align: left;
+              div {
+                font-size: 60px;
+              }
+            }
+          }
+        }
+        .digit_date {
+        margin-right: 140px;
+      }
+      }
+    }
+  }
+  .deal {
+    padding-left: 80px !important;
+    padding-top: 96px !important;
+    padding-bottom: 178px !important;
+    .deal_tittle {
+      font-size: 44px !important;
+      padding-bottom: 10px;
+    }
+    .deal_indicate {
+      padding-bottom: 48px;
+    }
+    .deal_cards_list {
+      .deal_card {
+        margin-right: 20px !important;
+      }
+    }
+  }
+  .about_company {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+    .about_company_wrapper {
+      .about_company_tittle {
+        font-size: 44px !important;
+        padding-bottom: 40px;
+      }
+      .about_company_data_wrap {
+        padding-bottom: 0;
+        .about_company_data {
+          padding-right: 100px;
+          div {
+            padding-bottom: 20px;
+          }
+        }
+        .about_company_tryIt {
+          margin-top: -40px;
+          margin-left: 180px;
+          width: 630px;
+          padding: 40px 60px !important;
+          .about_company_tryIt_title {
+            font-size: 28px;
+            padding: 30px;
+          }
+
+          input[type="submit"] {
+            width: 165px;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          input[type="text"] {
+            width: 333px;
+          }
+        }
+      }
+    }
+  }
+
+  .tariffs {
+    padding: 96px 297px !important;
+    .tariffs_tittle{
+        font-size: 44px!important;
+        padding-bottom: 40px!important;
+    }
+    .tariffs_switch{
+        margin-bottom: 44px!important;
+        font-size: 24px!important;
+    }
+    .tariffs_list{
+        .tarrifs_info{
+            // display: flex;
+            // flex-direction: column;
+            padding: 24px!important;
+            .tarif_item_price{
+                bottom: 0;
+            }
+            // .tarif_bottom{
+            //     margin-top: auto;
+            // }
         }
     }
-}
+  }
 
+  .digit_wrapper::before,
+  .about_company_wrapper::before {
+    width: 45%;
+  }
+}
